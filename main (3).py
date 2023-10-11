@@ -1,5 +1,22 @@
-year=int(input("Enter year to be checked:"))
-if(year%4==0 and year%100!=0 or year%400==0):
-  print("the year is a leep year!")
-else:
-  print("The year isn't a leep")
+#define the base class Player
+class Player:
+    def play(self):
+        print("The player is playing cricket.")
+
+#def the derived class Batsman
+class Batsman(Player):
+    def play(self):
+        print("The batsman is batting.")
+
+#def the derived class Bowler
+class Bowler(Player):
+    def play(self):
+        print("The bowler is bowling.")
+
+#create object of batsman and bowler clases
+batsman = Batsman()
+bowler = Bowler()
+
+#call the play() method for each object
+batsman.play()
+bowler.play()
